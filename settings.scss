@@ -1,0 +1,34 @@
+$black: rgba(0, 0, 0, 1);
+
+@mixin global-set() {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin background-section-1() {
+    background-color: #FCFCFC;
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 45px 50px -25px rgba(0, 0, 0, 0.25), inset 20px -120px 100px -70px rgba(0, 0, 0, 0.6);
+}
+
+@mixin background-section-2() {
+    background-color: linear-gradient(180deg, #FFFFFF 0%, #F6F6F6 100%);
+    mix-blend-mode: normal;
+}
+
+@mixin background-section-3() {
+    background-color: linear-gradient(180deg, #F7F7F7 0%, #FFFFFF 100%);
+    mix-blend-mode: normal;
+    box-shadow: inset 0px -70px 70px -40px rgba(0, 0, 0, 0.17);
+}
+
+@mixin background-section-5() {
+    background-color: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 70px 40px -30px rgba(0, 0, 0, 0.17);
+}
+
+@mixin background-section-6() {
+    background-color: rgba(203, 203, 203, 1);
+}
