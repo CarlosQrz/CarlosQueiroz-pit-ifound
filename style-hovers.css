@@ -23,19 +23,19 @@ body {
 }
 
 header > .main-header {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.11);
 }
 
 .main-header {
   width: 100%;
   height: 100px;
   position: fixed;
-  z-index: 10;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .navbar-header {
@@ -46,7 +46,7 @@ header > .main-header {
   position: relative;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(255, 255, 255, 0.219);
+  background-color: transparent;
 }
 
 .container-logo {
@@ -58,11 +58,13 @@ header > .main-header {
   justify-content: start;
   margin-left: 20px;
   background-color: rgba(169, 169, 169, 0);
+  transition: 280ms;
 }
 
 .logo {
   padding: 10px;
-  transform: scale(0.8);
+  transform: scale(1);
+  border-radius: 10px;
   cursor: pointer;
   transition: 280ms;
 }
@@ -75,7 +77,7 @@ header > .main-header {
   align-items: center;
   justify-content: space-around;
   list-style-type: none;
-  background-color: rgba(0, 255, 153, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .container-options-navbar > .sobre-link {
@@ -97,39 +99,39 @@ header > .main-header {
 .sobre {
   font-size: 16px;
   font-family: "Lato", sans-serif;
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 10px;
-  font-weight: 900;
+  font-weight: 400;
   transition: 280ms;
 }
 
 .shop {
   font-size: 16px;
   font-family: "Lato", sans-serif;
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 10px;
   border-radius: 100px;
-  font-weight: 900;
+  font-weight: 400;
   transition: 280ms;
 }
 
 .tracker {
   font-size: 16px;
   font-family: "Lato", sans-serif;
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 10px;
   border-radius: 100px;
-  font-weight: 900;
+  font-weight: 400;
   transition: 280ms;
 }
 
 .contato {
   font-size: 16px;
   font-family: "Lato", sans-serif;
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 10px;
   border-radius: 100px;
-  font-weight: 900;
+  font-weight: 400;
   transition: 280ms;
 }
 
@@ -171,10 +173,11 @@ header > .main-header {
 }
 
 .nome-marca {
-  line-height: 0.8em;
+  line-height: 0.7em;
   letter-spacing: 3px;
   font-size: 100px;
   font-family: "Lato";
+  font-weight: 900;
 }
 
 .frase1 {
@@ -188,6 +191,52 @@ header > .main-header {
   font-size: 70px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
+}
+
+/*SECTION MAIN ACABA AQUI*/
+/*SECTION 1 COMEÇA AQUI*/
+.section-content-1 {
+  background-color: #fcfcfc;
+  mix-blend-mode: normal;
+  box-shadow: inset 0px 45px 50px -25px rgba(0, 0, 0, 0.25), inset 20px -120px 100px -70px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-content-section-1 {
+  width: 70.5%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content-section-1 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.comprar {
+  width: 155px;
+  height: 40px;
+  text-align: center;
+  margin-top: 40px;
+  border: solid 1px transparent;
+  border-radius: 30px;
+  background: rgb(0, 102, 255);
+  background: linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(201, 222, 255) 100%);
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  transition: 280ms;
 }
 
 .perfil-img:hover {
@@ -244,5 +293,18 @@ header > .main-header {
   background-color: black;
   border-radius: 100px;
   padding: 10px;
+  transition: 280ms;
+}
+
+.logo:hover {
+  transform: rotate(10deg);
+}
+
+.comprar:hover {
+  transition: 280ms;
+}
+
+.comprar:active {
+  transform: scale(0.95);
   transition: 280ms;
 }/*# sourceMappingURL=style-hovers.css.map */
