@@ -1,169 +1,172 @@
 @import "settings.scss";
 @import url(./style-hovers.scss);
 
-
 ::-webkit-scrollbar {
-    width: 4px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0);
+  width: 4px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0);
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 0%;
-    background-color: rgb(0, 0, 0);
+  border-radius: 0%;
+  background-color: rgb(0, 0, 0);
 }
 
 * {
-    @include global-set;
+  @include global-set;
 }
 
 body {
-    width: 100%;
-    height: 200vh;
+  width: 100%;
+  height: 200vh;
 }
 
-header>.main-header {
-    background-color: rgba(255, 255, 255, 0);
+header > .main-header {
+  background-color: rgba(255, 255, 255, 0.11);
 }
 
 .main-header {
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: 100px;
 
-    position: fixed;
-    z-index: 10;
+  position: fixed;
+  z-index: 99;
 
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(10px);
 }
 
 .navbar-header {
-    width: 90%;
-    height: 60px;
+  width: 90%;
+  height: 60px;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    position: relative;
+  position: relative;
 
-    align-items: center;
-    justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
 
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .container-logo {
-    width: 100%;
-    height: 60px;
+  width: 100%;
+  height: 60px;
 
-    display: flex;
+  display: flex;
 
-    position: relative;
+  position: relative;
 
-    align-items: center;
-    justify-content: start;
+  align-items: center;
+  justify-content: start;
 
-    margin-left: 20px;
+  margin-left: 20px;
 
-    background-color: rgba(169, 169, 169, 0);
+  background-color: rgba(169, 169, 169, 0);
 
+  transition: 280ms;
 }
 
 .logo {
-    padding: 10px;
-    transform: scale(0.8);
-    cursor: pointer;
-    transition: 280ms;
+  padding: 10px;
+  transform: scale(1);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 280ms;
 }
 
 .container-options-navbar {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    position: relative;
+  position: relative;
 
-    align-items: center;
-    justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 
-    list-style-type: none;
+  list-style-type: none;
 
-    background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.container-options-navbar>.sobre-link {
-    text-decoration: none;
+.container-options-navbar > .sobre-link {
+  text-decoration: none;
 }
 
-.container-options-navbar>.shop-link {
-    text-decoration: none;
+.container-options-navbar > .shop-link {
+  text-decoration: none;
 }
 
-.container-options-navbar>.tracker-link {
-    text-decoration: none;
+.container-options-navbar > .tracker-link {
+  text-decoration: none;
 }
 
-.container-options-navbar>.contato-link {
-    text-decoration: none;
+.container-options-navbar > .contato-link {
+  text-decoration: none;
 }
 
 .sobre {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    color: $black;
-    padding: 10px;
-    font-weight: 100;
-    transition: 280ms;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: black;
+  padding: 10px;
+  font-weight: 400;
+  transition: 280ms;
 }
 
 .shop {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    color: $black;
-    padding: 10px;
-    border-radius: 100px;
-    font-weight: 100;
-    transition: 280ms;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: black;
+  padding: 10px;
+  border-radius: 100px;
+  font-weight: 400;
+  transition: 280ms;
 }
 
 .tracker {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    color: $black;
-    padding: 10px;
-    border-radius: 100px;
-    font-weight: 100;
-    transition: 280ms;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: black;
+  padding: 10px;
+  border-radius: 100px;
+  font-weight: 400;
+  transition: 280ms;
 }
 
 .contato {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    color: $black;
-    padding: 10px;
-    border-radius: 100px;
-    font-weight: 400;
-    transition: 280ms;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: black;
+  padding: 10px;
+  border-radius: 100px;
+  font-weight: 400;
+  transition: 280ms;
 }
 
 .perfil-img {
-    transform: scale(0.9);
-    border-radius: 100px;
-    transition: 280ms;
+  transform: scale(0.9);
+  border-radius: 100px;
+  transition: 280ms;
 }
 
-.container-perfil-img{
-    width: 300px;
+.container-perfil-img {
+  width: 300px;
 
-    display: flex;
+  display: flex;
 
-    justify-content: end;
-    align-items: center;
+  justify-content: end;
+  align-items: center;
 
-    background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /*HEADER TERMINA AQUI*/
@@ -171,53 +174,53 @@ header>.main-header {
 /*SECTION MAIN COMEÇA AQUI*/
 
 .conteudo-section-main {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-    position: relative;
+  position: relative;
 
-    display: flex;
+  display: flex;
 
-    z-index: -99;
+  z-index: -99;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-slogan {
-    width: 600px;
-    height: 600px;
+  width: 600px;
+  height: 600px;
 
-    position: relative;
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    line-height: 3.2em;
+  line-height: 3.2em;
 }
 
 .nome-marca {
-    line-height: 0.8em;
-    letter-spacing: 3px;
-    font-size: 100px;
-    font-family: 'Lato';
-    font-weight: 900;
+  line-height: 0.7em;
+  letter-spacing: 3px;
+  font-size: 100px;
+  font-family: "Lato";
+  font-weight: 900;
 }
 
 .frase1 {
-    font-size: 39px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
+  font-size: 39px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
 }
 
 .frase2 {
-    line-height: 0.6em;
-    font-size: 70px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+  line-height: 0.6em;
+  font-size: 70px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
 }
 
 /*SECTION MAIN ACABA AQUI*/
@@ -225,16 +228,74 @@ header>.main-header {
 /*SECTION 1 COMEÇA AQUI*/
 
 .section-content-1 {
-    background-color: #FCFCFC;
-    mix-blend-mode: normal;
-    box-shadow: inset 0px 45px 50px -25px rgba(0, 0, 0, 0.25), inset 20px -120px 100px -70px rgba(0, 0, 0, 0.6);
-    
-    width: 100%;
-    height: 100vh;
-    
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-items: center;
+  @include background-section-1();
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.container-content-section-1 {
+  width: 70.5%;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content-section-1 {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 450;
+  text-align: center;
+}
+
+.comprar {
+  width: 155px;
+  height: 40px;
+
+  text-align: center;
+
+  margin-top: 40px;
+
+  border: solid 1px transparent;
+  border-radius: 30px;
+
+  background: rgb(0, 102, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 102, 255, 1) 0%,
+    rgba(201, 222, 255, 1) 100%
+  );
+
+  color: white;
+
+  border: none;
+
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+
+  transition: 280ms;
+}
+
+.phone-container{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+width: 300px;
+}
+
+.computer{
+    position: absolute;
+    width: 300px;
 }
