@@ -219,3 +219,22 @@ header>.main-header {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
 }
+
+/*SECTION MAIN ACABA AQUI*/
+
+/*SECTION 1 COMEÇA AQUI*/
+
+.section-content-1 {
+    background-color: #FCFCFC;
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 45px 50px -25px rgba(0, 0, 0, 0.25), inset 20px -120px 100px -70px rgba(0, 0, 0, 0.6);
+    
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
