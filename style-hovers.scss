@@ -1,63 +1,73 @@
 @import "style.scss";
 @import "settings.scss";
 
-.perfil-img:hover{    
-    cursor: pointer;
-    transform: scale(1.05);
-    border-radius: 100px;
-    transition: 280ms;
+.perfil-img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  border-radius: 100px;
+  transition: 280ms;
 }
 
-.logo:hover{
-    transform:scale(0.9);
-    cursor: pointer;
-    transition: 280ms;
+.logo:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: 280ms;
 }
 
 .sobre:hover {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    color: white;
-    font-weight: 900;
-    background-color: black;
-    border-radius: 100px;
-    padding: 10px;
-    transition: 280ms;
-
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: 900;
+  background-color: black;
+  border-radius: 100px;
+  padding: 10px;
+  transition: 280ms;
 }
 
 .shop:hover {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    color: white;
-    font-weight: 900;
-    background-color: black;
-    border-radius: 100px;
-    padding: 10px;
-    transition: 280ms;
-
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: 900;
+  background-color: black;
+  border-radius: 100px;
+  padding: 10px;
+  transition: 280ms;
 }
 
 .tracker:hover {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    color: white;
-    font-weight: 900;
-    background-color: black;
-    border-radius: 100px;
-    padding: 10px;
-    transition: 280ms;
-
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: 900;
+  background-color: black;
+  border-radius: 100px;
+  padding: 10px;
+  transition: 280ms;
 }
 
 .contato:hover {
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    color: white;
-    font-weight: 900;
-    background-color: black;
-    border-radius: 100px;
-    padding: 10px;
-    transition: 280ms;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: 900;
+  background-color: black;
+  border-radius: 100px;
+  padding: 10px;
+  transition: 280ms;
+}
 
+.logo:hover {
+  transform: rotate(10deg);
+}
+
+.comprar:hover {
+  transition: 280ms;
+}
+
+.comprar:active {
+  transform: scale(0.95);
+
+  transition: 280ms;
 }
