@@ -243,12 +243,13 @@ header > .main-header {
 .phone-container {
   position: absolute;
   z-index: 10;
-  bottom: 0;
+  bottom: -47.55;
   width: 300px;
 }
 
 .computer {
   position: absolute;
+  right: 0;
   width: 300px;
 }
 
@@ -265,7 +266,7 @@ header > .main-header {
   transition: 280ms;
 }
 
-.sobre:hover {
+li.sobre:hover {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   color: white;
@@ -276,7 +277,7 @@ header > .main-header {
   transition: 280ms;
 }
 
-.shop:hover {
+li.shop:hover {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   color: white;
@@ -287,7 +288,7 @@ header > .main-header {
   transition: 280ms;
 }
 
-.tracker:hover {
+li.tracker:hover {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   color: white;
@@ -298,7 +299,7 @@ header > .main-header {
   transition: 280ms;
 }
 
-.contato:hover {
+li.contato:hover {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   color: white;
