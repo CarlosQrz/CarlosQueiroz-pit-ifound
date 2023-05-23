@@ -4,7 +4,7 @@
 ::-webkit-scrollbar {
   width: 4px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(0, 0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -19,6 +19,9 @@
 body {
   width: 100%;
   height: 200vh;
+
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 header > .main-header {
@@ -27,7 +30,7 @@ header > .main-header {
 
 .main-header {
   width: 100%;
-  height: 100px;
+  height: 60px;
 
   position: fixed;
   z-index: 99;
@@ -113,42 +116,42 @@ header > .main-header {
   text-decoration: none;
 }
 
-.sobre {
+li.sobre {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   color: black;
   padding: 10px;
-  font-weight: 400;
+  font-weight: 600;
   transition: 280ms;
 }
 
-.shop {
+li.shop {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   color: black;
   padding: 10px;
   border-radius: 100px;
-  font-weight: 400;
+  font-weight: 600;
   transition: 280ms;
 }
 
-.tracker {
+li.tracker {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   color: black;
   padding: 10px;
   border-radius: 100px;
-  font-weight: 400;
+  font-weight: 600;
   transition: 280ms;
 }
 
-.contato {
+li.contato {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   color: black;
   padding: 10px;
   border-radius: 100px;
-  font-weight: 400;
+  font-weight: 600;
   transition: 280ms;
 }
 
@@ -242,8 +245,8 @@ header > .main-header {
   overflow: hidden;
 }
 
-.container-content-section-1 {
-  width: 70.5%;
+div.container-content-section-1 {
+  width: 55.5%;
   height: 400px;
 
   display: flex;
@@ -251,13 +254,20 @@ header > .main-header {
 
   justify-content: center;
   align-items: center;
+
+  z-index: 13;
 }
 
-.text-content-section-1 {
+p.text-content-section-1 {
   font-family: "Lato", sans-serif;
-  font-size: 26px;
-  font-weight: 450;
+  font-size: 21px;
+  font-weight: 500;
+  color: black;
   text-align: center;
+}
+
+strong{
+  font-weight: 950;
 }
 
 .comprar {
@@ -288,15 +298,29 @@ header > .main-header {
   transition: 280ms;
 }
 
-.phone-container{
-    position: absolute;
-    z-index: 10;
-    bottom: -47.55;
-width: 300px;
+.phone-container>.phone-section-1 {
+  position: absolute;
+  z-index: 10;
+  bottom: -23.5em;
+  right: 32em;
+  width: 400px;
+  filter: drop-shadow(-60px 50px 40px rgba(0, 0, 0, 0.781));
+
+  z-index: 12;
 }
 
-.computer{
-    position: absolute;
-    right: 0;
-    width: 300px;
+.computer-container>.computer-section-1 {
+  position: absolute;
+  bottom: -48em;
+  right: 0em;
+  width: 450px;
+
+  z-index: 12;
+}
+
+.section-content-2{
+  width: 100%;
+  height: 100vh;
+
+  z-index: 13;
 }
