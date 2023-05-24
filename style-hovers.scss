@@ -63,11 +63,66 @@ li.contato:hover {
 }
 
 .comprar:hover {
+  width: 9em;
+  height: 40px;
   transition: 280ms;
 }
 
 .comprar:active {
   transform: scale(0.95);
 
+  transition: 280ms;
+}
+
+li.escute:hover {
+  letter-spacing: 2px;
+  transition: 300ms;
+}
+
+li.escute:hover img.location1 {
+  opacity: 1;
+  transition: 300ms;
+}
+
+li.observe:hover {
+  letter-spacing: 2px;
+  transition: 300ms;
+}
+
+li.observe:hover img.location2 {
+  opacity: 1;
+  transition: 300ms;
+}
+
+li.ache:hover {
+  letter-spacing: 2px;
+  transition: 300ms;
+}
+
+li.ache:hover img.location3 {
+  opacity: 1;
+  transition: 300ms;
+}
+
+img.logo-img-section-2:hover {
+  rotate: 360deg;
+  transition: 0.7s;
+}
+
+img.container-logo-img-section-2:hover {
+  transform: scale(0.9);
+  rotate: (360deg);
+  transition: 500ms;
+}
+
+button.compra-.compra-oferta:hover {
+  cursor: pointer;
+  transition: 280ms;
+}
+
+
+button.compra-oferta:active {
+  transform: scale(0.95);
+  cursor: pointer;
   transition: 280ms;
 }
