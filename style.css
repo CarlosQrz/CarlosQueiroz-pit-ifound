@@ -222,7 +222,7 @@ section.section-content-1 {
 }
 
 div.container-content-section-1 {
-  width: 50.5%;
+  width: 38.5%;
   height: 20vh;
   display: flex;
   flex-direction: column;
@@ -520,9 +520,17 @@ button.compra-oferta {
   transition: 280ms;
 }
 
-section.container-content-section-5 {
+section.section-content-5 {
   width: 100%;
-  height: 180vh;
+  height: 130vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container-content-section-5 {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -577,4 +585,32 @@ div.app-container-images {
   flex-direction: row;
   justify-content: space-between;
   width: 700px;
+}
+
+section.section-content-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  background-image: url("./img-main-page/APP-CONTENT-SECTION-6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45%;
+}
+
+ul.container-frases-efeito {
+  margin-left: 3em;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.4em;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  list-style-type: none;
+  line-height: 0.8em;
 }/*# sourceMappingURL=style.css.map */
