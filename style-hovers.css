@@ -24,19 +24,21 @@ body {
   overflow-y: scroll;
 }
 
-header > .main-header {
+header > div.main-header {
   background-color: rgba(255, 255, 255, 0.11);
 }
 
-.top-header {
-  position: relative;
+div.top-header {
+  position: fixed;
   display: flex;
   width: 100%;
   height: 40px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
-div.main-header {
+header.main-header {
   width: 100%;
   height: 100px;
   position: fixed;
@@ -45,11 +47,11 @@ div.main-header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
-.navbar-header {
+nav.navbar-header {
   width: 90%;
   height: 60px;
   display: flex;
@@ -60,7 +62,7 @@ div.main-header {
   background-color: transparent;
 }
 
-.container-logo {
+div.container-logo {
   width: 100%;
   height: 60px;
   display: flex;
@@ -72,7 +74,7 @@ div.main-header {
   transition: 280ms;
 }
 
-.logo {
+img.logo {
   padding: 10px;
   transform: scale(1);
   border-radius: 10px;
@@ -80,7 +82,7 @@ div.main-header {
   transition: 280ms;
 }
 
-.container-options-navbar {
+ul.container-options-navbar {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -236,6 +238,7 @@ p.text-content-section-1 {
   font-weight: 500;
   color: black;
   text-align: center;
+  z-index: 15;
 }
 
 strong {
@@ -245,6 +248,7 @@ strong {
 button.comprar {
   width: 9em;
   min-width: 155px;
+  display: none;
   height: 3em;
   min-width: 40px;
   text-align: center;
@@ -267,7 +271,7 @@ img.phone-section-1 {
   min-width: 200px;
   width: 750px;
   filter: drop-shadow(-100px 60px 50px rgba(0, 0, 0, 0.76));
-  padding-top: 50px;
+  padding-top: 6em;
   z-index: 12;
   transition: 300ms;
 }
@@ -278,7 +282,7 @@ img.computer-section-1 {
   max-width: 100%;
   min-width: 200px;
   width: 450px;
-  padding-top: 0em;
+  padding-top: 4em;
   z-index: 12;
 }
 
@@ -469,6 +473,10 @@ section.section-content-4 {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
+  background-image: url("./img-main-page/IMAGE-BACKGROUND-SECTION-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 div.container-content-section-4 {
@@ -480,25 +488,25 @@ div.container-content-section-4 {
 }
 
 h1.oferta-title {
-  font-size: 5em;
+  font-size: 4em;
   text-align: center;
   font-family: "Lato", sans-serif;
   line-height: 0.9em;
 }
 
 span.preco {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Lato", sans-serif;
   font-weight: 600;
   color: rgb(155, 155, 155);
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
-.compra-oferta {
+button.compra-oferta {
   width: 9em;
   min-width: 155px;
-  height: 3.2em;
+  height: 3em;
   text-align: center;
   border: solid 1px transparent;
   border-radius: 30px;
@@ -510,6 +518,65 @@ span.preco {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   transition: 280ms;
+}
+
+section.container-content-section-5 {
+  width: 100%;
+  height: 180vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.container-content-section-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+
+div.container-samsung-about {
+  position: relative;
+  width: 350px;
+  height: 600px;
+  text-align: justify;
+}
+
+h1.samsung {
+  font-size: 3.6em;
+  font-family: "Lato", sans-serif;
+}
+
+span.samsung-about {
+  font-size: 1.6em;
+  font-family: "Lato", sans-serif;
+}
+
+div.container-apple-about {
+  position: relative;
+  width: 350px;
+  height: 600px;
+  text-align: justify;
+}
+
+h1.apple {
+  font-size: 3.6em;
+  font-family: "Lato", sans-serif;
+}
+
+span.apple-about {
+  font-size: 1.6em;
+  font-family: "Lato", sans-serif;
+}
+
+div.app-container-images {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
 }
 
 .perfil-img:hover {
