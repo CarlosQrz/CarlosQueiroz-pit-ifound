@@ -30,3 +30,15 @@
 @mixin background-section-6() {
   background-color: rgba(203, 203, 203, 1);
 }
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

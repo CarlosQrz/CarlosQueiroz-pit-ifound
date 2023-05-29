@@ -222,7 +222,7 @@ section.section-content-1 {
 }
 
 div.container-content-section-1 {
-  width: 50.5%;
+  width: 38.5%;
   height: 20vh;
   display: flex;
   flex-direction: column;
@@ -520,21 +520,21 @@ button.compra-oferta {
   transition: 280ms;
 }
 
-section.container-content-section-5 {
+section.section-content-5 {
   width: 100%;
-  height: 180vh;
+  height: 130vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 div.container-content-section-5 {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
-  margin-top: 30px;
+  justify-content: space-evenly;
 }
 
 div.container-samsung-about {
@@ -575,8 +575,87 @@ div.app-container-images {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 700px;
+}
+
+img.face-android-app {
+  width: 50%;
+  position: relative;
+}
+
+img.face-ios-app {
+  width: 50%;
+  position: relative;
+}
+
+/*SECTION 6 COMEÇA AQUI*/
+section.section-content-6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+img.app-screen-section-6 {
+  width: 50%;
+}
+
+ul.container-frases-efeito {
+  margin-left: 3em;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.4em;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  list-style-type: none;
+  line-height: 0.92em;
+}
+
+li.simples {
+  transition: 280ms;
+}
+
+li.pratico {
+  transition: 280ms;
+}
+
+li.movil {
+  transition: 280ms;
+}
+
+li.simples:hover {
+  transition: 280ms;
+}
+
+li.pratico:hover {
+  transition: 280ms;
+}
+
+li.movil:hover {
+  transition: 280ms;
+}
+
+/*SECTION 6 ACABA AQUI*/
+footer.abismo {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+div.footer-container-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .perfil-img:hover {
