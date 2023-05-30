@@ -317,6 +317,7 @@ section.section-content-2 {
   justify-content: center;
   align-items: center;
   z-index: 13;
+  overflow: hidden;
 }
 
 div.container-content-section-2 {
@@ -337,6 +338,7 @@ ul.estagio {
 
 li.escute {
   width: 550px;
+  cursor: pointer;
   font-size: 5em;
   font-weight: 600;
   font-family: "Lato", sans-serif;
@@ -350,6 +352,7 @@ li.escute img.location1 {
 
 li.observe {
   width: 550px;
+  cursor: pointer;
   font-size: 5em;
   font-weight: 600;
   font-family: "Lato", sans-serif;
@@ -363,6 +366,7 @@ li.observe img.location2 {
 
 li.ache {
   width: 550px;
+  cursor: pointer;
   font-size: 5em;
   font-weight: 600;
   font-family: "Lato", sans-serif;
@@ -394,6 +398,7 @@ section.section-content-no-video-anymore {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 img.app-screen-section-no-video {
@@ -412,6 +417,7 @@ section.section-content-3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 div.container-content-section-3 {
@@ -477,14 +483,13 @@ section.section-content-4 {
   align-items: center;
   width: 100%;
   height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-  background-image: url("./img-main-page/IMAGE-BACKGROUND-SECTION-4.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+}
+
+img.background-app-section-4 {
+  width: 100%;
+  position: absolute;
+  z-index: -99;
 }
 
 div.container-content-section-4 {
@@ -516,8 +521,6 @@ button.compra-oferta {
   min-width: 155px;
   height: 3em;
   text-align: center;
-  border: solid 1px transparent;
-  border-radius: 30px;
   border: solid 3px linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(201, 222, 255) 100%);
   background: rgb(0, 102, 255);
   background: linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(201, 222, 255) 100%);
@@ -535,6 +538,7 @@ section.section-content-5 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 div.container-content-section-5 {
@@ -588,12 +592,12 @@ div.app-container-images {
 }
 
 img.face-android-app {
-  width: 50%;
+  width: 250px;
   position: relative;
 }
 
 img.face-ios-app {
-  width: 50%;
+  width: 250px;
   position: relative;
 }
 
@@ -605,6 +609,7 @@ section.section-content-6 {
   align-items: center;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 source.video-source-section-content-6 {

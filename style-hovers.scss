@@ -60,6 +60,7 @@ li.contato:hover {
 
 .logo:hover {
   transform: rotate(10deg);
+  box-shadow: 10px 10px 10px black;
 }
 
 .comprar:hover {
@@ -115,7 +116,7 @@ img.container-logo-img-section-2:hover {
   transition: 500ms;
 }
 
-button.compra-.compra-oferta:hover {
+button.compra-oferta:hover {
   cursor: pointer;
   transition: 280ms;
 }
