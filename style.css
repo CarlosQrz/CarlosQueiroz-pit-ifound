@@ -126,6 +126,7 @@ li.sobre {
   color: black;
   padding: 10px;
   font-weight: 600;
+  border-radius: 100px;
   transition: 280ms;
 }
 
@@ -244,11 +245,18 @@ div.container-content-section-1 {
 }
 
 p.text-content-section-1 {
+  min-width: 300px;
   font-family: "Lato", sans-serif;
   font-size: 21px;
   font-weight: 500;
   color: black;
   text-align: center;
+  padding: 20px;
+  border: solid 2.5px black;
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.2941176471);
   z-index: 15;
 }
 
@@ -390,6 +398,8 @@ img.logo-img-section-2 {
   transition: 1s;
 }
 
+/*SECTION 2 ACABA AQUI*/
+/*SECTION NO VIDEO COMEÇA AQUI*/
 section.section-content-no-video-anymore {
   position: relative;
   width: 100%;
@@ -401,12 +411,72 @@ section.section-content-no-video-anymore {
   overflow: hidden;
 }
 
+div.app-content-section-no-video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: justify;
+}
+
+div.app-content-section-no-video {
+  transition: 300ms;
+}
+
+ul.history {
+  list-style: none;
+  line-height: 5em;
+  transition: 300ms;
+}
+
+li.title-no-video img.historia-icon-hover {
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  transition: 300ms;
+}
+
+ul.history > li.title-no-video {
+  font-size: 6rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  text-align: left;
+  display: flex;
+  width: 420px;
+  align-items: end;
+  cursor: pointer;
+  flex-direction: row;
+  transition: 300ms;
+}
+
+ul.history > li.history-resume {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+h3.point {
+  text-align: center;
+  transform: scale(8);
+  font-size: 1rem;
+}
+
+hr.linha-historia {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
 img.app-screen-section-no-video {
   width: 50%;
+  filter: brightness(120%) saturate(0%);
   animation: moveUpDown 4s infinite backwards;
 }
 
-/*SECTION 2 COMEÇA AQUI*/
+/*SECTION NO VIDEO ACABA AQUI*/
 /*SECTION 3 COMEÇA AQUI*/
 section.section-content-3 {
   width: 100%;
@@ -522,6 +592,7 @@ button.compra-oferta {
   height: 3em;
   text-align: center;
   border: solid 3px linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(201, 222, 255) 100%);
+  border-radius: 100px;
   background: rgb(0, 102, 255);
   background: linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(201, 222, 255) 100%);
   color: white;
@@ -627,6 +698,7 @@ video {
 }
 
 ul.container-frases-efeito {
+  width: 370px;
   margin-left: 3em;
   display: flex;
   flex-direction: column;
@@ -646,18 +718,6 @@ li.pratico {
 }
 
 li.movil {
-  transition: 280ms;
-}
-
-li.simples:hover {
-  transition: 280ms;
-}
-
-li.pratico:hover {
-  transition: 280ms;
-}
-
-li.movil:hover {
   transition: 280ms;
 }
 
@@ -708,14 +768,14 @@ img.footer-logo-img {
   margin-bottom: 50px;
 }
 
-ul.produto {
-  margin-bottom: 10px;
+ul.produto > h1 {
+  margin-bottom: 13px;
 }
 
-ul.conta {
-  margin-bottom: 10px;
+ul.conta > h1 {
+  margin-bottom: 13px;
 }
 
-ul.sobre-nos {
-  margin-bottom: 10px;
+ul.sobre-nos > h1 {
+  margin-bottom: 13px;
 }/*# sourceMappingURL=style.css.map */

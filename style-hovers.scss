@@ -8,8 +8,8 @@
   transition: 280ms;
 }
 
-.logo:hover {
-  transform: scale(0.9);
+img.logo:hover {
+  transform: scale(1.05) rotate(10deg);
   cursor: pointer;
   transition: 280ms;
 }
@@ -22,6 +22,7 @@ li.sobre:hover {
   background-color: black;
   border-radius: 100px;
   padding: 10px;
+  transform: translateY(-3px);
   transition: 280ms;
 }
 
@@ -33,6 +34,7 @@ li.shop:hover {
   background-color: black;
   border-radius: 100px;
   padding: 10px;
+  transform: translateY(-3px);
   transition: 280ms;
 }
 
@@ -44,6 +46,7 @@ li.tracker:hover {
   background-color: black;
   border-radius: 100px;
   padding: 10px;
+  transform: translateY(-3px);
   transition: 280ms;
 }
 
@@ -55,12 +58,12 @@ li.contato:hover {
   background-color: black;
   border-radius: 100px;
   padding: 10px;
+  transform: translateY(-3px);
   transition: 280ms;
 }
 
-.logo:hover {
-  transform: rotate(10deg);
-  box-shadow: 10px 10px 10px black;
+div.app-content-section-no-video:hover {
+  transition: 280ms;
 }
 
 .comprar:hover {
@@ -105,6 +108,21 @@ li.ache:hover img.location3 {
   transition: 300ms;
 }
 
+li.title-no-video:hover img.historia-icon-hover {
+  width: 80px;
+  display: flex;
+  opacity: 1;
+  transition: 300ms;
+}
+
+ul.history:hover {
+  transition: 300ms;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
+  border-radius: 30px;
+  scale: (1.05);
+  transform: translateY(-3px);
+}
+
 img.logo-img-section-2:hover {
   rotate: 360deg;
   transition: 0.7s;
@@ -121,9 +139,23 @@ button.compra-oferta:hover {
   transition: 280ms;
 }
 
-
 button.compra-oferta:active {
   transform: scale(0.95);
   cursor: pointer;
+  transition: 280ms;
+}
+
+li.simples:hover {
+  letter-spacing: 2px;
+  transition: 280ms;
+}
+
+li.pratico:hover {
+  letter-spacing: 2px;
+  transition: 280ms;
+}
+
+li.movil:hover {
+  letter-spacing: 2px;
   transition: 280ms;
 }
