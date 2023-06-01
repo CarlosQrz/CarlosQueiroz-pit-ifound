@@ -33,6 +33,7 @@ body {
   height: 200vh;
   overflow: hidden;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 header > div.main-header {
@@ -56,8 +57,8 @@ header.main-header {
   z-index: 99;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
@@ -264,26 +265,6 @@ strong {
   font-weight: 950;
 }
 
-button.comprar {
-  width: 9em;
-  min-width: 155px;
-  display: none;
-  height: 3em;
-  min-width: 40px;
-  text-align: center;
-  margin-bottom: 10px;
-  border: solid 1px transparent;
-  border-radius: 30px;
-  border: solid 3px linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(201, 222, 255) 100%);
-  background: rgb(0, 102, 255);
-  background: linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(201, 222, 255) 100%);
-  color: white;
-  border: none;
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  transition: 280ms;
-}
-
 img.phone-section-1 {
   position: relative;
   max-width: 100%;
@@ -406,6 +387,7 @@ section.section-content-no-video-anymore {
   height: 100vh;
   background-color: rgb(255, 255, 255);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -494,8 +476,8 @@ div.container-content-section-3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 h1.title-content-section-3 {
@@ -512,7 +494,7 @@ ul.system-ifound {
 }
 
 div.container-img-system {
-  margin-top: 9em;
+  margin-top: 5em;
 }
 
 li.auto-falante {
@@ -549,25 +531,30 @@ img.system-img-about {
 section.section-content-4 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
+  background-image: url("./img-main-page/COMPUTER-3D-SECTION-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
   overflow: hidden;
 }
 
 img.background-app-section-4 {
-  width: 100%;
-  position: absolute;
+  width: 50%;
+  position: relative;
   z-index: -99;
 }
 
 div.container-content-section-4 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: justify;
+  margin-bottom: 12em;
 }
 
 h1.oferta-title {
@@ -581,15 +568,16 @@ span.preco {
   font-size: 1.5em;
   font-family: "Lato", sans-serif;
   font-weight: 600;
-  color: rgb(155, 155, 155);
-  margin-top: 25px;
-  margin-bottom: 50px;
+  color: rgb(68, 68, 68);
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 button.compra-oferta {
-  width: 9em;
-  min-width: 155px;
-  height: 3em;
+  width: 44%;
+  min-width: 5%;
+  height: 7.5vh;
+  margin-top: 30px;
   text-align: center;
   border: solid 3px linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(201, 222, 255) 100%);
   border-radius: 100px;
@@ -693,6 +681,7 @@ source.video-source-section-content-6 {
 video {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -724,7 +713,7 @@ li.movil {
 /*SECTION 6 ACABA AQUI*/
 footer.abismo {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -778,6 +767,89 @@ ul.conta > h1 {
 
 ul.sobre-nos > h1 {
   margin-bottom: 13px;
+}
+
+ul.produto > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+ul.conta > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+ul.sobre-nos > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+div.terms {
+  position: relative;
+  bottom: -6em;
+  width: 65%;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  word-spacing: 3px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+p.copy-text > a {
+  color: rgb(0, 102, 255);
+}
+
+/*PÁGINA PRODUCTS COMEÇA AQUI*/
+section.section-main {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container-products-content {
+  width: 90%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.img-product-container {
+  position: relative;
+  width: 700px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img.product-show {
+  width: 400px;
+  background-color: #8f8f8f;
+  border-radius: 30px;
+  transition: 300ms;
+}
+
+span.gratis {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+hr.division-line {
+  width: 50%;
 }
 
 @keyframes moveUpDown {
@@ -947,4 +1019,24 @@ li.pratico:hover {
 li.movil:hover {
   letter-spacing: 2px;
   transition: 280ms;
+}
+
+ul.produto > a:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+ul.conta > a:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+ul.sobre-nos > a:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+img.product-show:hover {
+  scale: 1.05;
+  transition: 300ms;
 }/*# sourceMappingURL=style-hovers.css.map */

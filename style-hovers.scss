@@ -159,3 +159,23 @@ li.movil:hover {
   letter-spacing: 2px;
   transition: 280ms;
 }
+
+ul.produto > a:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+ul.conta > a:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+ul.sobre-nos > a:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+img.product-show:hover{
+  scale: (1.05);
+  transition: 300ms;
+}

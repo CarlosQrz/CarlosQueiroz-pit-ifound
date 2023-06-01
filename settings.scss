@@ -31,6 +31,22 @@
   background-color: rgba(203, 203, 203, 1);
 }
 
+@mixin general-position-column(){
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+@mixin general-position-row(){
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+
 @keyframes moveUpDown {
   0% {
     transform: translateY(0);

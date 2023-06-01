@@ -22,6 +22,8 @@ body {
 
   overflow: hidden;
   overflow-y: scroll;
+
+  scroll-behavior: smooth;
 }
 
 header > div.main-header {
@@ -44,11 +46,7 @@ header.main-header {
   position: fixed;
   z-index: 99;
 
-  display: flex;
-  flex-direction: row;
-
-  align-items: center;
-  justify-content: center;
+  @include general-position-row();
 
   backdrop-filter: blur(5px);
 }
@@ -295,42 +293,6 @@ strong {
   font-weight: 950;
 }
 
-button.comprar {
-  width: 9em;
-  min-width: 155px;
-
-  display: none;
-
-  height: 3em;
-  min-width: 40px;
-
-  text-align: center;
-
-  margin-bottom: 10px;
-
-  border: solid 1px transparent;
-  border-radius: 30px;
-
-  border: solid 3px
-    linear-gradient(0deg, rgba(0, 102, 255, 1) 0%, rgba(201, 222, 255, 1) 100%);
-
-  background: rgb(0, 102, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 102, 255, 1) 0%,
-    rgba(201, 222, 255, 1) 100%
-  );
-
-  color: white;
-
-  border: none;
-
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-
-  transition: 280ms;
-}
-
 img.phone-section-1 {
   position: relative;
 
@@ -377,11 +339,7 @@ section.section-content-2 {
   width: 100%;
   height: 100vh;
 
-  display: flex;
-  flex-direction: row;
-
-  justify-content: center;
-  align-items: center;
+  @include general-position-row();
 
   z-index: 13;
 
@@ -476,10 +434,7 @@ section.section-content-no-video-anymore {
 
   background-color: rgb(255, 255, 255);
 
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
+  @include general-position-row();
 
   overflow: hidden;
 }
@@ -574,11 +529,7 @@ section.section-content-3 {
 div.container-content-section-3 {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
+  @include general-position-column();
 }
 
 h1.title-content-section-3 {
@@ -597,7 +548,7 @@ ul.system-ifound {
 }
 
 div.container-img-system {
-  margin-top: 9em;
+  margin-top: 5em;
 }
 
 li.auto-falante {
@@ -634,32 +585,32 @@ img.system-img-about {
 /*SECTION 4 COMEÇA AQUI*/
 
 section.section-content-4 {
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
+  @include general-position-column();
 
   width: 100%;
   height: 100vh;
+
+  background-image: url("./img-main-page/COMPUTER-3D-SECTION-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
 
   overflow: hidden;
 }
 
 img.background-app-section-4 {
-  width: 100%;
-  position: absolute;
+  width: 50%;
+  position: relative;
   z-index: -99;
 }
 
 div.container-content-section-4 {
-  display: flex;
-  flex-direction: column;
 
-  justify-content: center;
-  align-items: center;
+  @include general-position-column();
 
   text-align: justify;
+
+  margin-bottom: 12em;
 }
 
 h1.oferta-title {
@@ -675,17 +626,18 @@ span.preco {
   font-family: "Lato", sans-serif;
   font-weight: 600;
 
-  color: rgb(155, 155, 155);
+  color: rgb(68, 68, 68);
 
-  margin-top: 25px;
-  margin-bottom: 50px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 button.compra-oferta {
-  width: 9em;
-  min-width: 155px;
+  width: 44%;
+  min-width: 5%;
+  height: 7.5vh;
 
-  height: 3em;
+  margin-top: 30px;
 
   text-align: center;
 
@@ -714,11 +666,7 @@ section.section-content-5 {
   width: 100%;
   height: 130vh;
 
-  display: flex;
-  flex-direction: row;
-
-  justify-content: center;
-  align-items: center;
+@include general-position-row();
 
   overflow: hidden;
 }
@@ -790,11 +738,8 @@ img.face-ios-app {
 /*SECTION 6 COMEÇA AQUI*/
 
 section.section-content-6 {
-  display: flex;
-  flex-direction: row;
 
-  justify-content: center;
-  align-items: center;
+@include general-position-row();
 
   width: 100%;
   height: 100vh;
@@ -811,10 +756,7 @@ source.video-source-section-content-6 {
 
 video {
   position: relative;
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
+  @include general-position-column
 }
 
 ul.container-frases-efeito {
@@ -849,15 +791,11 @@ li.movil {
 
 footer.abismo {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
 
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
+  @include general-position-column();
 
   background-color: #f5f5f5;
 }
@@ -867,22 +805,13 @@ div.footer-container-content {
 
   width: 100%;
 
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
+  @include general-position-column();
 }
 
 div.div-footer-container-content {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-
-  justify-content: center;
+  @include general-position-column();
 }
 
 nav.container-footer-lists {
@@ -894,7 +823,6 @@ nav.container-footer-lists {
   flex-direction: row;
 
   align-items: center;
-
   justify-content: space-evenly;
 }
 
@@ -917,4 +845,98 @@ ul.conta > h1 {
 
 ul.sobre-nos > h1 {
   margin-bottom: 13px;
+}
+
+ul.produto > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+ul.conta > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+ul.sobre-nos > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+div.terms{
+
+  position:relative;
+  bottom: -6em;
+  width: 65%;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+
+  line-height: 1.5em;
+
+  display: flex;
+  flex-direction: column;
+
+  word-spacing: 3px;
+
+  justify-content: center;
+
+  margin-bottom: 30px;
+  
+}
+
+p.copy-text>a{
+  color: rgb(0, 102, 255);
+}
+
+/*PÁGINA PRODUCTS COMEÇA AQUI*/
+
+section.section-main{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+
+  @include general-position-row
+}
+
+div.container-products-content{
+  width: 90%;
+  height: 90vh;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+div.img-product-container{
+  position: relative;
+  width: 700px;
+  height: 900px;
+  @include general-position-column();
+}
+
+img.product-show{
+  width: 400px;
+  background-color: #8f8f8f;
+  border-radius: 30px;
+  transition: 300ms;
+}
+
+span.gratis{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+img.frete{
+  
+}
+
+hr.division-line{
+  width: 50%;
 }
