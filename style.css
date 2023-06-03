@@ -23,6 +23,7 @@
 }
 
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -33,7 +34,6 @@ body {
   height: 200vh;
   overflow: hidden;
   overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 header > div.main-header {
@@ -803,7 +803,7 @@ p.copy-text > a {
 }
 
 /*PÁGINA PRODUCTS COMEÇA AQUI*/
-section.section-main {
+section.section-product-main {
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
@@ -815,7 +815,7 @@ section.section-main {
 
 div.container-products-content {
   width: 90%;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -823,8 +823,18 @@ div.container-products-content {
   justify-content: space-evenly;
 }
 
+div.informations-product-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 div.img-product-container {
   position: relative;
+  padding-top: 30px;
   width: 700px;
   height: 900px;
   display: flex;
@@ -836,6 +846,7 @@ div.img-product-container {
 img.product-show {
   width: 400px;
   background-color: #8f8f8f;
+  filter: saturate(0%);
   border-radius: 30px;
   transition: 300ms;
 }
@@ -850,4 +861,125 @@ span.gratis {
 
 hr.division-line {
   width: 50%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+h1.title-oferta {
+  font-family: "Lato", sans-serif;
+  font-size: 3em;
+  text-align: left;
+  margin-top: 2em;
+  padding-right: 6em;
+}
+
+h2.subtitle-oferta {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em;
+  color: rgb(128, 128, 128);
+  text-align: left;
+  margin-bottom: 10px;
+  padding-right: 17em;
+}
+
+h1.unidade-text {
+  font-family: "Lato", sans-serif;
+  font-size: 2.3em;
+  line-height: 1em;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h4.parcela {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: rgb(128, 128, 128);
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+hr.division-oferta-1 {
+  width: 30%;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+hr.division-oferta-2 {
+  width: 30%;
+  border: solid 1px black;
+}
+
+button.comprar {
+  width: 15%;
+  font-size: 1.2em;
+  height: 7vh;
+  color: white;
+  margin-bottom: 20px;
+  border: none;
+  border: solid 3px linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(201, 222, 255) 100%);
+  border-radius: 100px;
+  background: rgb(0, 102, 255);
+  background: linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(201, 222, 255) 100%);
+  transition: 280ms;
+}
+
+h1.aviso-produto {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font: 9px;
+  color: rgb(128, 128, 128);
+  margin-top: 40px;
+}
+
+h1.aviso-produto-ponto {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1em;
+  color: rgb(128, 128, 128);
+  margin-bottom: 40px;
+}
+
+footer.abismo-2 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+p.contatos-local-empresa > a {
+  color: rgb(0, 102, 255);
+}
+
+div.volta-container {
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 280ms;
+}
+
+a.voltar {
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  color: rgb(0, 0, 0);
+  transition: 280ms;
+}
+
+img.voltar-icon {
+  width: 16px;
+}
+
+/*PÁGINA PRODUCTS ACABA AQUI*//*# sourceMappingURL=style.css.map */

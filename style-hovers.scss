@@ -66,18 +66,6 @@ div.app-content-section-no-video:hover {
   transition: 280ms;
 }
 
-.comprar:hover {
-  width: 9em;
-  height: 40px;
-  transition: 280ms;
-}
-
-.comprar:active {
-  transform: scale(0.95);
-
-  transition: 280ms;
-}
-
 li.escute:hover {
   letter-spacing: 2px;
   transition: 300ms;
@@ -175,7 +163,43 @@ ul.sobre-nos > a:hover {
   color: rgb(0, 0, 0);
 }
 
-img.product-show:hover{
-  scale: (1.05);
+img.product-show:hover {
+  box-shadow: 6px 0px 6px rgb(66, 66, 66);
+  transform: translateY(-3px);
+  cursor: pointer;
   transition: 300ms;
+}
+
+button.comprar:hover {
+  cursor: pointer;
+  box-shadow: 0px 6px 0px rgb(66, 66, 66);
+  transform: translateY(-3px);
+  transition: 280ms;
+}
+
+button.comprar:active {
+  transform: scale(0.95);
+  cursor: pointer;
+  transition: 280ms;
+}
+
+button.comprar:active {
+  transform: scale(0.95);
+
+  transition: 280ms;
+}
+
+div.volta-container:hover a.voltar {
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+  transition: 280ms;
+}
+
+div.volta-container:hover {
+  background-color: rgb(46, 136, 255);
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 0px black;
+  width: 130px;
+  height: 50px;
+  transition: 280ms;
 }
