@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="sr load-hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,11 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@700&family=Rubik:wght@300;400;500&display=swap"
         rel="stylesheet">
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+
     <!--icon pagina-->
     <link rel="page refencial icon" href="./pages-icons/favicon.ico">
 
@@ -31,10 +36,10 @@
                 <img class="logo" src="./img-main-page/logo_remake.jpg" alt="logo">
             </div>
             <ul class="container-options-navbar">
-                <a href="#" class="sobre-link">
+                <a href="#sobre_nos" class="sobre-link">
                     <li class="sobre">SOBRE NÓS</li>
                 </a>
-                <a href="./products.html" class="shop-link">
+                <a href="./products.html" target="_blank" class="shop-link">
                     <li class="shop">SHOP</li>
                 </a>
                 <a href="./about-tracker.html" class="tracker-link">
@@ -54,9 +59,9 @@
 
     <section class="conteudo-section-main">
         <div class="container-slogan">
+            <img src="./pages-icons/420px-Globe_icon.svg.png" alt="main-page-slogan-svg" class="world-icon">
             <p class="slogan">
-            <h1 class="nome-marca">IFOUND</h1>
-            <h4 class="frase1">Sem mais nada</h4>
+            <h1 class="frase1">Sem mais nada</h1>
             <h2 class="frase2">a perder.</h2>
             </p>
         </div>
@@ -74,7 +79,9 @@
 
             <img class="phone-section-1" src="./img-main-page/PHONE-LOGO-IMG-SECTION-1.jpg" alt="phone">
 
+
             <img class="computer-section-1" src="./img-main-page/computer-location.png" alt="computer">
+
 
         </div>
 
@@ -143,34 +150,6 @@
 
     </section>
 
-    <section class="section-content-5">
-
-        <div class="container-content-section-5">
-
-            <div class="container-samsung-about">
-                <h1 class="samsung">ANDROID<img src="./img-main-page/android-logo-png.png" alt=""></h1>
-                <span class="samsung-about">Aplicativos ANDROID : Ative a conexão via Bluetooth de seu Celular depois ,
-                    vá em configurações do seu Celular , Conexões , clique em bluetooth para ver os dispositivos por
-                    perto , logo depois , procure pelo id que se refere ao seu dispositivo .</span>
-            </div>
-
-            <div class="app-container-images">
-
-                <img class="face-android-app" src="./img-main-page/FACE-ANDROID-APP.png" alt="">
-                <img class="face-ios-app" src="./img-main-page/FACE-IOS-APP.png" alt="">
-
-            </div>
-
-            <div class="container-apple-about">
-                <h1 class="apple">IOS<img src="./img-main-page/apple-logo-png.png" alt=""></h1>
-                <span class="apple-about">Aplicativos IOS : Ative a conexão via Bluetooth de seu Celular depois , vá em
-                    configurações do seu Celular , Ajustes , clique em bluetooth para ver os dispositivos por perto ,
-                    logo depois , procure pelo id que se refere ao seu dispositivo .</span>
-            </div>
-
-        </div>
-    </section>
-
     <section class="section-content-6">
         <ul class="container-frases-efeito">
             <li class="simples">Simplicidade.</li>
@@ -218,16 +197,13 @@
                 <hr class="termos-divisa">
                 <p class="copy-text">Copyright © 2023 IFOUND Inc. Todos os direitos reservados. IFOUND Brasil Ltda.
                     CNPJ: 11.664.742/0001-38<br>
-                    <a href="">Política de Privacidade</a>
-                    |
-                    <a href="">Política de vendas</a>
+                    <a href="./documents/TEMOS DE USO - iFOUND.pdf">Política de Privacidade</a>
                     |
                 </p>
                 <!-- CNPJ FIGURATIVO -->
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

@@ -199,22 +199,18 @@ li.contato {
   line-height: 3.2em;
 }
 
-.nome-marca {
-  line-height: 0.7em;
-  letter-spacing: 3px;
-  font-size: 100px;
-  font-family: "Lato";
-  font-weight: 900;
+.frase1 {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
 }
 
-.frase1 {
-  font-size: 39px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
+img.world-icon {
+  width: 40%;
 }
 
 .frase2 {
-  line-height: 0.6em;
+  line-height: 1.2em;
   font-size: 70px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -589,76 +585,6 @@ button.compra-oferta {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   transition: 280ms;
-}
-
-section.section-content-5 {
-  width: 100%;
-  height: 130vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-div.container-content-section-5 {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-div.container-samsung-about {
-  position: relative;
-  width: 350px;
-  height: 600px;
-  text-align: justify;
-}
-
-h1.samsung {
-  font-size: 3.6em;
-  font-family: "Lato", sans-serif;
-}
-
-span.samsung-about {
-  font-size: 1.6em;
-  font-family: "Lato", sans-serif;
-}
-
-div.container-apple-about {
-  position: relative;
-  width: 350px;
-  height: 600px;
-  text-align: justify;
-}
-
-h1.apple {
-  font-size: 3.6em;
-  font-family: "Lato", sans-serif;
-}
-
-span.apple-about {
-  font-size: 1.6em;
-  font-family: "Lato", sans-serif;
-}
-
-div.app-container-images {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 700px;
-}
-
-img.face-android-app {
-  width: 250px;
-  position: relative;
-}
-
-img.face-ios-app {
-  width: 250px;
-  position: relative;
 }
 
 /*SECTION 6 COMEÇA AQUI*/
@@ -1158,8 +1084,8 @@ ul.sobre-nos > a:hover {
 }
 
 img.product-show:hover {
-  box-shadow: 6px 0px 6px rgb(66, 66, 66);
-  transform: translateY(-3px);
+  box-shadow: 6px 6px 6px rgb(66, 66, 66);
+  transform: translateY(-12px);
   cursor: pointer;
   transition: 300ms;
 }

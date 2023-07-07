@@ -28,9 +28,9 @@ require 'connectionDB.php';
             </div>
             <input class="button" name="login" value="Enviar" type="submit">
             <ul class="opcoes">
-                <li><a href="esquecisenha.php"><label for="">Alterar minha Senha</label></a></li>
-                <li><a href="singup.php"><label for="">Cadastre-se</label></a></li>
-                <li><a href="excluir.php"><label for="">Excluir registro</label></a></li>
+                <li><a href="esquecisenha.php"><label for=""class="alterar">Alterar minha Senha</label></a></li>
+                <li><a href="singup.php"><label for="" class="cadastro">Cadastre-se</label></a></li>
+                <li><a href="excluir.php"><label for="" class="exclui">Excluir registro</label></a></li>
             </ul>
         </form>
     </div>

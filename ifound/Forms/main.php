@@ -79,6 +79,7 @@ if(isset($_POST['login'])) {
     // Verifica se o registro foi encontrado
     if ($stmt->rowCount() > 0) {
         echo 'Sucesso ao cadastrar!';
+        header("Location: singup.php");
     } else {
         // Credenciais inválidas, exibe uma mensagem de erro
         echo 'Email ou senha incorretos';
